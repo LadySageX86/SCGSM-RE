@@ -1,8 +1,19 @@
-/*****************************************************
- *              SCFS - Rust Edition                  *
- *      A simple standard for managing save data     *
- * Written by Spencer Smith (spenny@geniuspiece.com) *
- *****************************************************/
+/*  SCFS Rust Edition - A simple specification for managing save data
+ *  Copyright (C) 2020 Spencer Smith <spenny@geniuspiece.com>
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
 
 pub struct Flag {
     pub key: String,
@@ -38,7 +49,8 @@ impl SCFS {
 
         for line in savefile.lines() {
             let parse_line: Vec<&str> = line.split('|').collect();
-            self.add_flag(parse_line[0], parse_line[1]);
+            if sf == "baseflags" { self.add_flag(parse_line[0], parse_line[1]); }
+            else { self.update_flag(parse_line[0], parse_line[1]); }
         }
     }
 
