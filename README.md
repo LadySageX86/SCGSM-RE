@@ -1,4 +1,4 @@
-# SCGSM Rust Edition v0.1.0
+# SCGSM Rust Edition v0.1.2
 ## Developed by Spencer Smith (spenny@geniuspiece.com)
 ### Last updated 25 August 2020
 
