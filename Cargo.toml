@@ -1,5 +1,5 @@
 [package]
-name = "scfs-re"
+name = "scfs-gsm"
 description = "A simple specification for managing game data"
 license = "GPL"
 repository = "https://github.com/spenito-git/SCFS-RE"
