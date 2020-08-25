@@ -1,4 +1,4 @@
-# SCFS Rust Edition v1.0.0
+# SCFS Rust Edition v0.1.0
 ## Developed by Spencer Smith (spenny@geniuspiece.com)
 ### Last updated 25 August 2020
 
