@@ -1,5 +1,9 @@
 [package]
 name = "scfs"
+description = "A simple specification for managing game data"
+license = "GPL3"
+repository = "https://github.com/spenito-git/SCFS-RE"
+documentation = "https://github.com/spenito-git/SCFS-RE/README.md"
 version = "0.1.0"
 authors = ["Spencer Smith <spenny@geniuspiece.com>"]
 edition = "2018"
