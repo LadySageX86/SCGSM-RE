@@ -4,6 +4,12 @@
 
 *SCGSM* is a very simple specification for saving and managing game data. 
 
+## Usage
+
+This library is available through crates.io! To add it to your project, simply add the following line underneath the dependencies tag in your *Cargo.toml* file:
+
+`scgsm = "0.1.2"`
+
 ## Syntax
 The structure of an *SCGSM* file is as follows:
 
@@ -18,7 +24,9 @@ The pipe operator (|) takes two parameters, a flag key on the left, and a flag v
 There must be only one key/value pair per line, and there must be no spaces between the parameters and pipe. 
 
 ## Changes from original version
-In the original C++ implementation of *SCGSM*, there was a function called `sc::FS::parse()` that would read the *.scgs* file line by line and split it into separate strings. This function was unnecessary in the Rust Edition and all that functionality has been condensed into the `SCGSM::load_flags()` function instead.
+Project renamed to avoid conflicts with another SCFS.
+
+In the original C++ implementation of *SCGSM*, there was a function called `sc::GSM::parse()` that would read the *.scgs* file line by line and split it into separate strings. This function was unnecessary in the Rust Edition and all that functionality has been condensed into the `SCGSM::load_flags()` function instead.
 
 Originally *.scgs* files would end with the line "ENDFLAGS", however this was decided to be redundant and thus removed from this version of the specification.
 
