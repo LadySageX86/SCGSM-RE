@@ -1,4 +1,4 @@
-/*  SCFS Rust Edition - A simple specification for managing save data
+/*  SCGSM Rust Edition - A simple specification for managing save data
  *  Copyright (C) 2020 Spencer Smith <spenny@geniuspiece.com>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -29,13 +29,13 @@ impl Flag {
     }
 }
 
-pub struct SCFS {
+pub struct SCGSM {
     pub flags: Vec<Flag>,
 }
 
-impl SCFS {
-    pub fn init() -> SCFS {
-        SCFS {
+impl SCGSM {
+    pub fn init() -> SCGSM {
+        SCGSM {
             flags: Vec::new()
         }
     }
