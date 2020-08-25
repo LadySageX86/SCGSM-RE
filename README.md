@@ -11,7 +11,7 @@ This library is available through crates.io! To add it to your project, simply a
 `scgsm = "0.1.2"`
 
 ## Syntax
-The structure of an *SCGSM* file is as follows:
+The structure of an *SCGSM* file (*.scgs*) is as follows:
 
 ```
 FLAG_A|1
