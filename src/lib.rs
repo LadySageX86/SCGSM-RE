@@ -49,7 +49,7 @@ impl SCGSM {
 
         for line in savefile.lines() {
             let parse_line: Vec<&str> = line.split('|').collect();
-            if sf == "baseflags" { self.add_flag(parse_line[0], parse_line[1]); }
+            if sf == "baseflags.scgs" { self.add_flag(parse_line[0], parse_line[1]); }
             else { self.update_flag(parse_line[0], parse_line[1]); }
         }
     }
