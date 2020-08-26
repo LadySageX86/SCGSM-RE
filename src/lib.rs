@@ -15,6 +15,9 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+use std::str::FromStr;
+use std::fmt::Debug;
+
 pub struct Flag {
     pub key: String,
     pub value: String
@@ -42,6 +45,10 @@ impl SCGSM {
 
     pub fn add_flag(&mut self, k: &str, v: &str) {
         self.flags.push(Flag::init(k, v));
+    }
+
+    pub fn cast_value<T>(&mut self, i: usize) -> T where T: FromStr, <T as FromStr>::Err: Debug {
+        self.flags[i].value.parse::<T>().unwrap()
     }
 
     pub fn load_flags(&mut self, sf: &str) {
