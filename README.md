@@ -8,7 +8,7 @@
 
 This library is available through crates.io! To add it to your project, simply add the following line underneath the dependencies tag in your *Cargo.toml* file:
 
-`scgsm = "0.1.2"`
+`scgsm = "0.1.3"`
 
 ## Syntax
 The structure of an *SCGSM* file (*.scgs*) is as follows:
