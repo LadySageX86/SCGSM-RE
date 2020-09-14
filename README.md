@@ -1,4 +1,4 @@
-# SCGSM Rust Edition v0.2.0
+# SCGSM Rust Edition v0.2.01
 ## Developed by Spencer Smith (spenny@geniuspiece.com)
 ### Last updated 26 August 2020
 
@@ -8,7 +8,7 @@
 
 This library is available through crates.io! To add it to your project, simply add the following line underneath the dependencies tag in your *Cargo.toml* file:
 
-`scgsm = "0.2.0"`
+`scgsm = "0.2.01"`
 
 ## Syntax
 The structure of an *SCGSM* file (*.scgs*) is as follows:
