@@ -4,7 +4,7 @@ description = "A simple specification for managing game data"
 license = "GPL-3.0"
 repository = "https://github.com/spenito76/SCGSM-RE"
 documentation = "https://github.com/spenito76/SCGSM-RE/blob/master/README.md"
-version = "0.2.01"
+version = "0.2.1"
 authors = ["Spencer Smith <spenny@geniuspiece.com>"]
 edition = "2018"
 
