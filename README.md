@@ -1,5 +1,5 @@
 # SCGSM Rust Edition v0.2.1
-## Developed by Spencer Smith (spenny@geniuspiece.com)
+## Developed by Sage Smith (sagemistressmods@gmail.com)
 ### Last updated 26 August 2020
 
 *SCGSM* is a very simple specification for saving and managing game data. 
